@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="icon" href="your-favicon.ico" type="image/x-icon">
+    <meta name="description" content="Signup form for your website.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        form {
+            max-width: 400px;
+            margin: 0 auto ;
+            padding: 50px;
+            font-family: "Poppins", serif;
+        }
+        input {
+            border: none;
+            border-bottom: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: "Poppins", serif;
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            padding: 5px;
+            cursor: pointer;
+            width: 100px;
+            font-family: "Poppins", serif;
+        }
+        div {
+           display: flex;  
+           font-family: "Poppins", serif;
+           font-size: 12px;
+        }
+
+</style>
+</head>
+
+<body>
+
+    <header>
+        
+    </header>
+
+    <main>
+        <form action="/submit" method="post">
+            <h1>Signup</h1>
+           
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+            
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+           
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"  required>
+
+            
+            <input type="date" id="dob" name="dob" placeholder="MM/DD/YYYY" required>
+
+            
+            
+            <div >
+                <input style="width: 10px; " type="radio" id="male" name="gender" value="male" required>
+                <label style="padding-right: 20px;" for="male">Male</label>
+                
+           
+                <input  style="width: 10px; "type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                
+            </div>
+            <div>
+            <input style=" width: 10px;" type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+            <label for="newsletter">I agree to all the Terms and conditions</label>
+        </div id="but">
+
+            <button type="submit">Signup</button>
+        </form>
+    </main>
+
+    <footer>
+       
+    </footer>
+
+</body>
+
+</html>
